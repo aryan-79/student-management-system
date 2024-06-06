@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer utilities {
+  .h-calc-6 {
+    height: calc(100vh - 6rem);
+  }
+} */
+
+.image-container {
+  height: 100%;
+  clip-path: polygon(13% 0%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.style-label {
+  @apply text-gray-200 text-lg mt-2;
+}
+
+.style-input {
+  @apply w-full mt-2 p-1 md:p-2 rounded-lg bg-inherit shadow-sm text-medium border-0 ring-1 ring-gray-400 text-gray-200 focus:ring-2 focus:border-blue-800 placeholder:text-gray-500 sm:text-sm sm:leading-6;
+}
+
+.style-select {
+  @apply ml-10 w-20 px-2 bg-gray-200 text-gray-700 text-center rounded-md border-2 border-gray-500 shadow-lg mt-2;
+}
